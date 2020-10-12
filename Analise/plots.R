@@ -13,17 +13,17 @@ dff$Tratado <- as.factor(dff$treat)
       aes(x=ANO, y=NOTA, group=Tratado,color=Tratado))+
       geom_vline(xintercept = 2013, linetype="dashed")+
       geom_line()+
-      annotate(geom = "text", x = 2011.5, y = 256,
-               label="Início do\nPrograma")+
       ylab("Nota")+
       ggtitle(paste0("Evolução das notas em escolas participantes", 
                      " e não participantes do programa"))+
-      geom_curve(color="black",
-            aes(x=2011.5, y = 257.5, 
-                xend = 2012.9, yend = 260),
-            arrow = arrow(length = unit(0.05, "npc")),
-            angle = 90,
-            curvature = -0.3)+
+      # annotate(geom = "text", x = 2011.5, y = 256,
+      #          label="Início do\nPrograma")+
+      # geom_curve(color="black",
+      #       aes(x=2011.5, y = 257.5, 
+      #           xend = 2012.9, yend = 260),
+      #       arrow = arrow(length = unit(0.05, "npc")),
+      #       angle = 90,
+      #       curvature = -0.3)+
       theme(legend.position = "bottom")+
       facet_wrap(~DISCIPLINA)
 )
@@ -71,4 +71,5 @@ ll_results <- rbind(mtm, pt)
 
 # ambos graficos ----
 library(cowplot)
-cowplot::plot_grid(p1, p2, ncol=1)
+(pf <- cowplot::plot_grid(p1, p2, ncol=1))
+cowplot::ggsave2(filename="readmeplots.png",pf, device = "png")
