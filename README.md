@@ -35,5 +35,5 @@ Os resultados apontam para um impacto causal positivo do programa, e que este im
 A partir destes resultados um estudo acadêmico foi submetido e está sob análise. Neste artigo a questão do mecanismo pelo qual o programa funciona é melhor explorado, e análises de robustez dos resultados também são feitas.
 
 ## About me
-**Made with ❤️ by Ian Fukushima | [LinkedIn](https://linkedin.com/in/ian-fukushima) | [GitHub](https://github.com/is-fuku)**
+**Made with ❤️ by Ian Fukushima | [LinkedIn](https://linkedin.com/in/ian-fukushima) | [GitHub](https://github.com/isfuku) | [Kaggle](https://www.kaggle.com/ianfukushima)**
 
